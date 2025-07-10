@@ -4,6 +4,7 @@ from users import USERS
 import sys
 #import temporal de pruebas
 from frontend.forms.form_nueva_factura import FormNuevaFactura
+from frontend.forms.form_consulta_facturas import FormConsultaFacturas
 
 class LoginApp(QMainWindow):
     def __init__(self):
@@ -21,7 +22,8 @@ class LoginApp(QMainWindow):
 
         if usuario in USERS and USERS[usuario]["password"] == clave:
             rol = USERS[usuario]["rol"]
-            QMessageBox.information(self, "Bienvenido", f"Login correcto.\nRol: {rol}")
-        
+            self.ventana_consulta = FormConsultaFacturas()
+            self.ventana_consulta.show()
+            self.hide()        
         #aqui abriremos el panel según el rol
         else: self.ui.messageLabel.setText("Usuario o contraseña incorrectos.")

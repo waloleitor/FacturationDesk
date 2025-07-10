@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>422</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>741</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Número de factura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Cliente</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Ruta</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Método de cobro</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Fecha factura desde</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Fecha factura hasta</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Resultado</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="numeroFacturaInput">
+      <property name="toolTip">
+       <string>Número de factura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="clienteInput">
+      <property name="toolTip">
+       <string>Cliente</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="rutaInput">
+      <property name="toolTip">
+       <string>Ej: MA2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QCheckBox" name="filtroCobradaCheck">
+      <property name="text">
+       <string>Cobrado</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QComboBox" name="metodoCobroCombo">
+      <item>
+       <property name="text">
+        <string>Todos</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tarjeta</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Efectivo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Transferencia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Otros</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QCheckBox" name="filtroRechazadaCheck">
+      <property name="text">
+       <string>Rechazado</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QDateEdit" name="fechaDesdeInput"/>
+    </item>
+    <item row="10" column="1">
+     <widget class="QDateEdit" name="fechaHastaInput"/>
+    </item>
+    <item row="12" column="0" colspan="2">
+     <widget class="QPushButton" name="consultarButton">
+      <property name="toolTip">
+       <string>Comenzar consulta</string>
+      </property>
+      <property name="text">
+       <string>Consultar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="1">
+     <widget class="QTableWidget" name="tablaResultados"/>
+    </item>
+    <item row="9" column="1">
+     <widget class="QCheckBox" name="usarFechaDesdeCheck">
+      <property name="text">
+       <string>Filtrar desde esta fecha</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QCheckBox" name="usarFechaHastaCheck">
+      <property name="text">
+       <string>Filtrar hasta esta fecha</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
