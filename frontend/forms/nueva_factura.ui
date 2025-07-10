@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>467</width>
+    <height>443</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>451</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Fecha de factura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QDateEdit" name="fechaFacturaInput">
+      <property name="toolTip">
+       <string>Fecha de la factura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Número de factura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="numeroFacturaInput">
+      <property name="toolTip">
+       <string>Código único de la factura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Cliente</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="clienteInput">
+      <property name="toolTip">
+       <string>Nombre del cliente</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Ruta</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="rutaInput">
+      <property name="toolTip">
+       <string>Ruta de reparto</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Precio</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QDoubleSpinBox" name="precioInput">
+      <property name="toolTip">
+       <string>precio decimal, mínimo 0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="cargarPdfButton">
+      <property name="toolTip">
+       <string>Cargar y abrir PDF</string>
+      </property>
+      <property name="text">
+       <string>Cargar PDF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QCheckBox" name="cobradaCheck">
+      <property name="text">
+       <string>Cobrada</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QCheckBox" name="rechazadaCheck">
+      <property name="text">
+       <string>Rechazada</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Método de pago</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QComboBox" name="metodoCobroInput">
+      <property name="toolTip">
+       <string>Método de cobro</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Tarjeta</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Efectivo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Transferencia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Otros</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Fecha de cobro</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QDateEdit" name="fechaCobroInput"/>
+    </item>
+    <item row="10" column="1">
+     <widget class="QCheckBox" name="entregadaCheck">
+      <property name="text">
+       <string>Entregada a PPCR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QDateEdit" name="fechaEntregaInput"/>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>Fecha de entrega</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="1">
+     <widget class="QPushButton" name="guardarFacturaButton">
+      <property name="text">
+       <string>Guardar factura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="0" colspan="2">
+     <widget class="QLabel" name="statusLabel">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

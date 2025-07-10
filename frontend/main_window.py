@@ -2,6 +2,8 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
 from frontend.login_window import Ui_MainWindow
 from users import USERS
 import sys
+#import temporal de pruebas
+from frontend.forms.form_nueva_factura import FormNuevaFactura
 
 class LoginApp(QMainWindow):
     def __init__(self):
@@ -23,4 +25,3 @@ class LoginApp(QMainWindow):
         
         #aqui abriremos el panel según el rol
         else: self.ui.messageLabel.setText("Usuario o contraseña incorrectos.")
-        
