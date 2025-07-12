@@ -34,11 +34,11 @@ class FormConsultaFacturas(QWidget):
 
         # Aplicar filtros solo si el usuario los usa
         if numero.strip():
-            query = query.filter(Factura.numero_factura.contains(numero.strip()))
+            query = query.filter(Factura.numero_factura.ilike(f"%{numero.strip()}%"))
         if cliente.strip():
-            query = query.filter(Factura.cliente.contains(cliente.strip()))
+            query = query.filter(Factura.cliente.ilike(f"%{cliente.strip()}%"))
         if ruta.strip():
-            query = query.filter(Factura.ruta.contains(ruta.strip()))
+            query = query.filter(Factura.ruta.ilike(f"%{ruta.strip()}%"))
         if self.ui.filtroCobradaCheck.isChecked():
             query = query.filter(Factura.cobrada == True)
         if self.ui.filtroRechazadaCheck.isChecked():

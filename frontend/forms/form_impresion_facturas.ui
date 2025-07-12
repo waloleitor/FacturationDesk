@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormImpresionFacturas</class>
+ <widget class="QWidget" name="FormImpresionFacturas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>818</width>
+    <height>432</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Imprimir Facturas</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>801</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Número factura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="numeroFacturaInput"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Cliente</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="clienteInput"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Ruta</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="rutaInput"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QCheckBox" name="usarFechaDesdeCheck">
+      <property name="text">
+       <string>Fecha desde</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QDateEdit" name="fechaDesdeInput"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QCheckBox" name="usarFechaHastaCheck">
+      <property name="text">
+       <string>Fecha hasta</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QDateEdit" name="fechaHastaInput"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QCheckBox" name="soloEntregadasCheck">
+      <property name="text">
+       <string>Entregada PPCR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QCheckBox" name="soloRechazadasCheck">
+      <property name="text">
+       <string>Rechazadas</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QCheckBox" name="soloCobradasCheck">
+      <property name="text">
+       <string>Cobradas</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QCheckBox" name="soloPendientesCheck">
+      <property name="text">
+       <string>Pendientes de cobro</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <widget class="QTableWidget" name="tablaResultados"/>
+    </item>
+    <item row="8" column="0" colspan="2">
+     <widget class="QPushButton" name="imprimirButton">
+      <property name="text">
+       <string>Imprimir facturas filtradas</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
